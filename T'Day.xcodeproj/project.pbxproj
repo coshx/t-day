@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		943737241FE822680037F365 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943737231FE822680037F365 /* AppDelegate.swift */; };
-		943737261FE822680037F365 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943737251FE822680037F365 /* ViewController.swift */; };
+		943737261FE822680037F365 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943737251FE822680037F365 /* WelcomeViewController.swift */; };
 		943737291FE822680037F365 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 943737271FE822680037F365 /* Main.storyboard */; };
 		9437372B1FE822680037F365 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9437372A1FE822680037F365 /* Assets.xcassets */; };
 		9437372E1FE822680037F365 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9437372C1FE822680037F365 /* LaunchScreen.storyboard */; };
+		948D93EE1FE8423A00AF3957 /* CalendarSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948D93ED1FE8423A00AF3957 /* CalendarSelectViewController.swift */; };
+		948D93F41FE84A2800AF3957 /* CalendarTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948D93F31FE84A2800AF3957 /* CalendarTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		943737201FE822680037F365 /* T'Day.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "T'Day.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		943737231FE822680037F365 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		943737251FE822680037F365 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		943737251FE822680037F365 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		943737281FE822680037F365 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9437372A1FE822680037F365 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9437372D1FE822680037F365 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9437372F1FE822680037F365 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		948D93ED1FE8423A00AF3957 /* CalendarSelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarSelectViewController.swift; sourceTree = "<group>"; };
+		948D93F31FE84A2800AF3957 /* CalendarTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +59,13 @@
 			isa = PBXGroup;
 			children = (
 				943737231FE822680037F365 /* AppDelegate.swift */,
-				943737251FE822680037F365 /* ViewController.swift */,
+				943737251FE822680037F365 /* WelcomeViewController.swift */,
 				943737271FE822680037F365 /* Main.storyboard */,
 				9437372A1FE822680037F365 /* Assets.xcassets */,
 				9437372C1FE822680037F365 /* LaunchScreen.storyboard */,
 				9437372F1FE822680037F365 /* Info.plist */,
+				948D93ED1FE8423A00AF3957 /* CalendarSelectViewController.swift */,
+				948D93F31FE84A2800AF3957 /* CalendarTableViewCell.swift */,
 			);
 			path = "T'Day";
 			sourceTree = "<group>";
@@ -136,8 +142,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				943737261FE822680037F365 /* ViewController.swift in Sources */,
+				943737261FE822680037F365 /* WelcomeViewController.swift in Sources */,
 				943737241FE822680037F365 /* AppDelegate.swift in Sources */,
+				948D93EE1FE8423A00AF3957 /* CalendarSelectViewController.swift in Sources */,
+				948D93F41FE84A2800AF3957 /* CalendarTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,7 +286,7 @@
 				DEVELOPMENT_TEAM = YNH9MQQ87M;
 				INFOPLIST_FILE = "T'Day/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.coshx.demo.T-Day";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.coshx.tday.T-Day";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -293,7 +301,7 @@
 				DEVELOPMENT_TEAM = YNH9MQQ87M;
 				INFOPLIST_FILE = "T'Day/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.coshx.demo.T-Day";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.coshx.tday.T-Day";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
